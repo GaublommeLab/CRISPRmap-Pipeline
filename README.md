@@ -19,14 +19,11 @@ $ git clone https://github.com/GaublommeLab/CRISPRmap-Pipeline.git
 $ cd CRISPRmap-Pipeline
 
 # Install Conda Environment
-$ conda env create -f crisprmap-pipeline
+$ conda env create -f crisprmap-pipeline.yml
 
 # Setup Jupyter Notebook
 $ mkdir ~/.jupyter/
-$ cp /tmp/jupyter_notebook_config.py ~/.jupyter/
-
-# Activate the Environment
-$ Conda activate crisprmap-pipeline.yml
+$ cp jupyter_notebook_config.py ~/.jupyter/
 
 # Confirm environment creation
 $ conda activate crisprmap-pipeline
@@ -34,6 +31,10 @@ $ conda activate crisprmap-pipeline
 # To Run Jupyter Notebook
 $ bash startup.sh
 ```
+### Debugging installation
+1. Make sure your startup.sh file has the right path to conda.sh file
+2. Configure your startup.sh file to the path where you want to open the jupyter notebook. Default is current working directory
+3. Ensure that the jupyter notebook port is open. Default port: 8888
 
 ## Running the Notebook
 
