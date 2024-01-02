@@ -37,8 +37,11 @@ $ conda activate crisprmap-pipeline
 The jupyter notebook config file ensures that the jupyter notebook is launched with the following configurations:
 
 ip = Accept all ip
+
 open_browser = False
+
 port = 8888
+
 Display resource ultilization = True
 
 You can modify the config file based on your requirements
