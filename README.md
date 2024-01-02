@@ -3,7 +3,7 @@ Pipeline to analyze CRISPRmap datasets
 
 Here you can find the resources to analyze any dataset that has been created using the experimental protocol following the publication: Multi-omic Optical Pooled Screening in Human Cells and Tissue.
 
-This version of the repository contains the code that was used to analyze all images acquired in the original paper: Multi-omic Optical Pooled Screening in Human Cells and Tissue. You can find an updated and expanded version of the repository [here](https://github.com/GaublommeLab/CRISPRmap_maxPro)
+This version of the repository contains the code that was used to analyze all images acquired in the original paper: CRISPRmap: Sequencing-free optical pooled screens mapping multi-omic phenotypes in cells and tissue. You can find an updated and expanded version of the repository [here](https://github.com/GaublommeLab/CRISPRmap_maxPro)
 
 ## Installation:
 
@@ -62,7 +62,7 @@ $ bash startup.sh
 
 ### Dependencies
 
-All dependencies are included in the conda environment file. Here are the list of critical dependencies
+All dependencies are included in the conda environment file. Here are the list of critical dependencies:
 
 1. Python = 3.7.*
 2. numpy > 1.20.2
@@ -82,7 +82,10 @@ To upgrade installed packages
 
 ## Running the Notebook
 
+The following notebooks are to replicate the data analyzed in the publication: CRISPRmap: Sequencing-free optical pooled screens mapping multi-omic phenotypes in cells and tissue.
+
 ### 1. Rescaling and Registration
+
 
 
 ### 2. Cell Segmentation
