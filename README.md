@@ -21,12 +21,32 @@ $ cd CRISPRmap-Pipeline
 # Install Conda Environment
 $ conda env create -f crisprmap-pipeline.yml
 
+# Confirm environment creation
+$ conda activate crisprmap-pipeline
+
+```
+#### Configuring startup.sh file:
+
+- Open Startup.sh file in any text editor of your choice
+- Add path to conda.sh file at specified location. (Should be present under the following directory structure anaconda3/etc/profile.d/conda.sh)
+- Default working directory is current working directory. Please change as needed.
+- Replace IP with your static IP at specified location
+
+#### Configuring jupyter_notebook_config.py (optional):
+
+The jupyter notebook config file ensures that the jupyter notebook is launched with the following configurations:
+
+ip = Accept all ip
+open_browser = False
+port = 8888
+Display resource ultilization = True
+
+You can modify the config file based on your requirements
+
+```bash
 # Setup Jupyter Notebook
 $ mkdir ~/.jupyter/
 $ cp jupyter_notebook_config.py ~/.jupyter/
-
-# Confirm environment creation
-$ conda activate crisprmap-pipeline
 
 # To Run Jupyter Notebook
 $ bash startup.sh
@@ -35,10 +55,27 @@ $ bash startup.sh
 1. Make sure your startup.sh file has the right path to conda.sh file
 2. Configure your startup.sh file to the path where you want to open the jupyter notebook. Default is current working directory
 3. Ensure that the jupyter notebook port is open. Default port: 8888
+4. Make sure you have mentioned the correct static ip for the jupyter notebook
+
+### Dependencies
+
+1. numpy
+2. scipy
+3. skimage<= 16.0
+4. cellpose== 0.6.1
+5. matplotlib
+6. seaborn
+7. pandas
+
+Any missing package can be installed directly using the jupyter notebook using the following command:
+!pip install <package_name>
+To upgrade installed packages
+!pip install <package_name> --upgrade
 
 ## Running the Notebook
 
 ### 1. Rescaling and Registration
+
 
 ### 2. Cell Segmentation
 
