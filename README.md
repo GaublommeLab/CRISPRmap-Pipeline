@@ -1,7 +1,7 @@
 # CRISPRmap-Pipeline
 Pipeline to analyze CRISPRmap datasets
 
-Here you can find the resources to analyze any dataset that has been created using the experimental protocol following the publication: Multi-omic Optical Pooled Screening in Human Cells and Tissue.
+Here you can find the resources to analyze any dataset that has been created using the experimental protocol following the publication: CRISPRmap: Sequencing-free optical pooled screens mapping multi-omic phenotypes in cells and tissue.
 
 This version of the repository contains the code that was used to analyze all images acquired in the original paper: CRISPRmap: Sequencing-free optical pooled screens mapping multi-omic phenotypes in cells and tissue. You can find an updated and expanded version of the repository [here](https://github.com/GaublommeLab/CRISPRmap_maxPro)
 
