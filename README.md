@@ -62,13 +62,18 @@ $ bash startup.sh
 
 ### Dependencies
 
-1. numpy
-2. scipy
-3. skimage<= 16.0
-4. cellpose== 0.6.1
-5. matplotlib
-6. seaborn
-7. pandas
+All dependencies are included in the conda environment file. Here are the list of critical dependencies
+
+1. Python = 3.7.*
+2. numpy > 1.20.2
+3. scipy
+4. skimage<= 0.16.2
+5. cellpose== 0.6.1
+6. matplotlib
+7. seaborn
+8. pandas
+9. imaris-ims-file-reader==0.1.8
+10. seaborn == 0.11.1
 
 Any missing package can be installed directly using the jupyter notebook using the following command:
 !pip install <package_name>
