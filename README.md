@@ -80,6 +80,10 @@ Any missing package can be installed directly using the jupyter notebook using t
 To upgrade installed packages
 !pip install <package_name> --upgrade
 
+## Reference data
+
+You can find reference data [here] (https://www.ebi.ac.uk/biostudies/)
+
 ## Running the Notebook
 
 The following notebooks are to replicate the data analyzed in the publication: CRISPRmap: Sequencing-free optical pooled screens mapping multi-omic phenotypes in cells and tissue.
@@ -93,3 +97,4 @@ The following notebooks are to replicate the data analyzed in the publication: C
 ### 3. Amplicon Calling and Barcode Assignment
 
 ### 4. Foci Detection
+
